@@ -253,7 +253,7 @@
 
 // con filter
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // let filtrato = numbers.filter((number)=>{
 //      return number > 5
@@ -262,10 +262,74 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let filtrato = numbers.filter((number)=>number > 5);
 
 // stiamo filtrando numbers, per farci restituire in un nuovo array, clone dell'array di partenza, solo i numeri > 5. Una volta fatto questo, con la map, cicliamo su questo nuovo array e ogni numero verrà moltiplicato * 2
-let filtrato = numbers.filter((number)=>number > 5).map((numero)=> numero * 2);
+// let filtrato = numbers.filter((number)=>number > 5).map((numero)=> numero * 2);
 
-numbers = filtrato;
-console.log(numbers);
-console.log(filtrato);
+// numbers = filtrato;
+// console.log(numbers);
+// console.log(filtrato);
+
+// voglio fare l'addizione tra tutti gli elementi di questo array
+// let numbers = [1, 2, 3, 4, 5];
+
+// let somma = 0;
+
+// for(let i = 0; i < numbers.length; i++){
+//     somma = somma + numbers[i];
+//     somma += numbers[i];
+// }
+
+// facciamolo con la .reduce()
+// let numbers = [1, 2, 3, 4, 5];
+// dentro le tonde della callback, la reduce vuole 2 parametri. 1 è la saccoccia, comumenemente chiamata accumulator. 2 il singolo elemento dell'array ad ogni giro di ciclo
+// let somma = numbers.reduce((acc, numero)=> acc + numero);
+
+// console.log(somma);
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// console.log(...numbers);
 
 
+// console.log(Math.max(...numbers));
+
+
+// uso lo spread operator per popolare un array
+
+// function somma(numero1, numero2, numero3){
+//     let sommaccia = numero1 + numero2 + numero3;
+//     return sommaccia;
+// }
+
+
+// let sum = somma(5, 2, 3);
+// console.log(sum);
+
+// e se la funzione ricevesse n parametri, come faccio? Spread operator
+
+// function somma(...numeri){
+//     return numeri.reduce((acc, numero)=> acc + numero);
+// }
+
+// let risultatoFinale = somma(1, 2, 3, 4, 5);
+// console.log(risultatoFinale);
+
+// .splice()
+
+let numbers = [1, 2, 3, 4, 5];
+// partendo dall'inice che io ho indicato, posso indicare quanti elementi cancellare.
+// numbers.splice(2, 2);
+// console.log(numbers);
+
+// e se volessi aggiungere? Indico i parametri da aggiungere, dopo aver indicato i primi 2
+
+// numbers.splice(2,1,'ciao');
+// console.log(numbers);
+
+// e se volessi aggiungere senza eliminare elementi? indico lo 0 nel posto in cui vanno gli elementi da eliminare
+
+// quando aggiungiamo, senza eliminare, l'elemento aggiuntivo si andrà esattamente a posizionare nel punto dell'indice del vecchio elemento.
+// numbers.splice(3, 0, 'ciao', 100, 20, 4504004040);
+// console.log(numbers);
+
+// numbers.splice(1, 2);
+// console.log(numbers);

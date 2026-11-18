@@ -45,3 +45,17 @@ GENERA UN NUOVO ARRAY, CLONE DELL'ARRAY DI PARTENZA e mi permette di modificare 
 
 .filter()
 GENERA UN NUOVO ARRAY, CLONE DELL'ARRAY DI PARTENZA e mi permette di filtrare gli elementi da inserire nel nuovo array, a patto che rispettino una DETERMINATA CONDIZIONE.
+
+.forEach()
+cicla sull'array di partenza, NON GENERA UN CLONE, e per ogni elemento all'interno dell'array genera dei side-effect
+questo metodo è previsto che faccia solo side effect, difatti se dovessi ERRONEAMENTE usarlo per fare operazioni matematiche che return fuori qualcosa, otterremo sempre e solo un undefined.
+
+.reduce()
+MI PERMETTE DI RIDURRE TUTTO IL CONTENUTO DI UN ARRAY IN UN UNICO ELEMENTO CHE NON E' PIù UN ARRAY
+
+spread operator / splat operator -> ...
+mi serve a rompere un array per poi farci qualcosa.
+posso però usarlo anche per popolare un array.
+
+.splice()
+Permette di rumuovere e/o aggiungere elementi in un desiderato indice dell'array
